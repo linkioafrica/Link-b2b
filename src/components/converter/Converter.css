@@ -1,0 +1,16 @@
+h2::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: rgb(199, 199, 199);
+  position: absolute;
+  left: -8px;
+  margin: 8px auto;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+}
