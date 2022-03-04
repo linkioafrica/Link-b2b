@@ -5,7 +5,7 @@ import { Converter } from "./components/converter/Converter";
 
 import "./App.css";
 
-import Paper from "@mui/material/Paper";
+import { Box, Paper } from "@mui/material";
 
 const App = () => {
   return (
@@ -20,9 +20,21 @@ const App = () => {
       />
       <Converter width="max-w-md" />
 
-      <Paper className="pagination" elevation={3}>
-        <Balance />
-      </Paper>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          "& > :not(style)": {
+            m: 1,
+            width: 350,
+            // height: 150,
+          },
+        }}
+      >
+        <Paper className="p-amount" elevation={3}>
+          <Balance Cur="NGN" amount={692737.05} />
+        </Paper>
+      </Box>
     </div>
   );
 };

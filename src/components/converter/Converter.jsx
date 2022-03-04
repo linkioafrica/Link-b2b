@@ -15,7 +15,7 @@ export const Converter = ({ width }) => {
   return (
     <div className={`bg-primary rounded-xl px-8 py-10 ${width}`}>
       {/* Top */}
-      <div className="bg-white flex items-center justify-between p-3 rounded-xl">
+      <div className="bg-white flex items-center justify-between p-2 rounded-xl">
         <div className="text-slate-700">
           <p className="text-lg font-normal">You send</p>
           <input
@@ -35,13 +35,13 @@ export const Converter = ({ width }) => {
       </div>
 
       {/* Middle */}
-      <div className="text-white font-normal flex justify-around py-3 border-l ml-20 relative">
-        <div className="text-lg space-y-5">
+      <div className="text-white font-normal flex justify-around py-5 border-l ml-14 relative">
+        <div className="text-md space-y-7">
           <h2>{`$${converter.rate}`}</h2>
           <h2>{`$${converter.fees}`}</h2>
           <h2>{`${converter.arrival}`}</h2>
         </div>
-        <div className="text-lg space-y-5">
+        <div className="text-md space-y-7">
           <h1>Our current rate</h1>
           <h1>Fees</h1>
           <h1>Estimated arrival</h1>
@@ -49,7 +49,7 @@ export const Converter = ({ width }) => {
       </div>
 
       {/* Bottom */}
-      <div className="bg-white flex items-center justify-between p-3 rounded-xl">
+      <div className="bg-white flex items-center justify-between p-2 rounded-xl">
         <div className="text-slate-700">
           <p className="text-lg font-normal">Recieve</p>
           <h1 className="text-xl font-medium">{converter.receiving}</h1>

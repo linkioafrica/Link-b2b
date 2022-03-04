@@ -8,7 +8,7 @@ export const Button = ({
 }) => {
   return (
     <button
-      className={`flex items-center justify-center text-white font-normal ${textSize} rounded-lg ${bgColor} ${paddingX} py-2 active:ring ${ringColor} transition duration-200 ease-out cursor-pointer ${
+      className={`flex items-center justify-center text-white font-normal ${textSize} mb-4 rounded-lg ${bgColor} ${paddingX} py-1 active:ring ${ringColor} transition duration-200 ease-out cursor-pointer ${
         icon && "space-x-2"
       }`}
     >
