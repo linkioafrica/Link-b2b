@@ -1,11 +1,5 @@
-import { Converter } from "./components/converter/Converter";
-
 const App = () => {
-  return (
-    <div className="">
-      <Converter />
-    </div>
-  );
+  return <div>App</div>;
 };
 
 export default App;

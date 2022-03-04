@@ -1,9 +1,7 @@
-import { width } from "@mui/system";
 import { useState } from "react";
 import "./Converter.css";
-import Dropdown from "./Dropdown";
 
-export const Converter = () => {
+export const Converter = ({ width }) => {
   const [converter, setConverter] = useState({
     sending: 468.4,
     receiving: 193852.16,
@@ -13,10 +11,8 @@ export const Converter = () => {
   });
   const [sendInput, setSendInput] = useState(468.4);
 
-  let width = "lg";
-
   return (
-    <div className={`bg-primary rounded-xl px-8 py-10 max-w-${width}`}>
+    <div className={`bg-primary rounded-xl px-8 py-10 ${width}`}>
       {/* Top */}
       <div className="bg-white flex items-center justify-between p-3 rounded-xl">
         <div className="text-slate-700">
@@ -24,13 +20,16 @@ export const Converter = () => {
           <input
             type="number"
             name=""
+            min="0"
             value={sendInput}
             className="outline-none text-xl font-medium"
             onChange={(event) => setSendInput(event.target.value)}
           />
         </div>
         <div className="py-3 pl-10 pr-20 border-l border-gray-800">
-          <Dropdown />
+          <select name="" id="" className="outline-none">
+            <option value="">USD</option>
+          </select>
         </div>
       </div>
 
@@ -55,7 +54,9 @@ export const Converter = () => {
           <h1 className="text-xl font-medium">{converter.receiving}</h1>
         </div>
         <div className="py-3 pl-10 pr-20 border-l border-gray-800">
-          <Dropdown />
+          <select name="" id="" className="outline-none">
+            <option value="">NGN</option>
+          </select>
         </div>
       </div>
     </div>
