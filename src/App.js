@@ -1,5 +1,11 @@
+import { Converter } from "./components/converter/Converter";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <Converter width="max-w-lg" />
+    </div>
+  );
 };
 
 export default App;

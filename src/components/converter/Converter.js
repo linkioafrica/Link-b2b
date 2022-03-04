@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Converter.css";
+import ReactFlagsSelect from "react-flags-select";
 
 export const Converter = ({ width }) => {
   const [converter, setConverter] = useState({
@@ -9,6 +10,7 @@ export const Converter = ({ width }) => {
     fees: 2.34,
     arrival: "Instant",
   });
+  const [selected, setSelected] = useState("");
   const [sendInput, setSendInput] = useState(468.4);
 
   return (
@@ -26,10 +28,21 @@ export const Converter = ({ width }) => {
             onChange={(event) => setSendInput(event.target.value)}
           />
         </div>
-        <div className="py-3 pl-10 pr-20 border-l border-gray-800">
-          <select name="" id="" className="outline-none">
-            <option value="">USD</option>
-          </select>
+        <div className="py-3 pl-3 pr-20 border-l border-gray-800">
+          <ReactFlagsSelect
+            selected={selected}
+            onSelect={(code) => setSelected(code)}
+            countries={["US", "GB", "TRY", "NG"]}
+            customLabels={{
+              US: "USD",
+              GB: "GBP",
+              TRY: "TRY",
+              NG: "NG",
+            }}
+            placeholder="----------"
+            default="US"
+            className="border-none"
+          />
         </div>
       </div>
 
@@ -53,10 +66,19 @@ export const Converter = ({ width }) => {
           <p className="text-lg font-normal">Recieve</p>
           <h1 className="text-xl font-medium">{converter.receiving}</h1>
         </div>
-        <div className="py-3 pl-10 pr-20 border-l border-gray-800">
-          <select name="" id="" className="outline-none">
-            <option value="">NGN</option>
-          </select>
+        <div className="py-3 pl-5 pr-12 border-l border-gray-800">
+          <ReactFlagsSelect
+            selected={selected}
+            onSelect={(code) => setSelected(code)}
+            countries={["US", "GB", "TRY", "NG"]}
+            customLabels={{
+              US: "USD",
+              GB: "GBP",
+              TRY: "TRY",
+              NG: "NG",
+            }}
+            placeholder="----------"
+          />
         </div>
       </div>
     </div>
