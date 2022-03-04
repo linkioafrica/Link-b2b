@@ -1,10 +1,15 @@
 // import { BsDroplet } from "react-icons/bs";
 import { Button } from "./components/button/Button";
+import { Balance } from "./components/balance/Balance";
 import { Converter } from "./components/converter/Converter";
+
+import "./App.css";
+
+import { Box, Paper } from "@mui/material";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <Button
         text="Droplet"
         textSize="text-lg"
@@ -14,6 +19,22 @@ const App = () => {
         paddingX="px-14"
       />
       <Converter width="max-w-md" />
+
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          "& > :not(style)": {
+            m: 1,
+            width: 350,
+            // height: 150,
+          },
+        }}
+      >
+        <Paper className="p-amount" elevation={3}>
+          <Balance Cur="NGN" amount={692737.05} />
+        </Paper>
+      </Box>
     </div>
   );
 };

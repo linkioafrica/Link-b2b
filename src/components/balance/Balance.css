@@ -1,0 +1,39 @@
+.balance {
+  /* border: 1px solid black; */
+  height: 100%;
+  padding: 20px 20px;
+}
+
+.balance-currency {
+  /* border: 1px solid rgb(10, 48, 173); */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.balance-currency > h3 {
+  color: var(--black);
+  font-size: var(--font-size-x);
+  font-family: var(--font-family-circular_std-regular);
+}
+
+.balance-currency img {
+  height: 40px;
+  width: 40px;
+}
+
+.balance-amount > h2 {
+  font-size: var(--font-size-lx);
+  font-family: var(--font-family-circular_std-bold);
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 0;
+  /* border: 1px solid rgb(10, 48, 173); */
+}
+
+.balance-amount > p {
+  /* border: 1px solid rgb(10, 48, 173); */
+  color: var(--nevada);
+  font-size: var(--font-size-s);
+}
