@@ -1,5 +1,5 @@
 // import { BsDroplet } from "react-icons/bs";
-import { Button, Balance, Converter } from "./components";
+import { Button, Balance, Converter, Request } from "./components";
 
 import "./App.css";
 
@@ -36,6 +36,12 @@ const App = () => {
       </Box>
 
       <Activity />
+      <Request
+        title="Withdrawal request received"
+        info="We have received your request.
+NGNC should be deposited in your wallet as soon as we’re done checking the details."
+        responds={false}
+      />
     </div>
   );
 };
