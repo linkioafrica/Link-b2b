@@ -1,0 +1,27 @@
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.navbar-links > p::focus,
+.navbar-links > p::hover {
+  color: var(--navy-blue);
+}
+
+.navbar-links > img {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+.navbar-links > p {
+  color: var(--nevada);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
