@@ -14,7 +14,7 @@ const App = () => {
 
         <KycAccess />
 
-        {/* <Usdc /> */}
+        <Usdc />
       </div>
     </div>
   );
