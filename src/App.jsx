@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import "./App.css";
 
-import { Balance, Header, UserAuth, KycAccess } from "./components";
+import { Balance, Header, UserAuth, KycAccess, Usdc } from "./components";
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
         <UserAuth />
 
         <KycAccess />
+
+        {/* <Usdc /> */}
       </div>
     </div>
   );

@@ -3,8 +3,7 @@ import { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import { Avatar, Button, Paper, Typography } from "@mui/material";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import { Button, Paper, Typography } from "@mui/material";
 
 import useStyles from "./styles";
 import Input from "../formInput/Input";
@@ -14,15 +13,10 @@ const initialState = {
   email: "",
 };
 
-const UserAuth = () => {
+const KycAccess = () => {
   // const navigate = useNavigate();
   const classes = useStyles();
   const [formData, setFormData] = useState(initialState);
-  const [showPassword, setShowPassword] = useState(false);
-
-  const handleShowPassword = () => {
-    setShowPassword((prevShowPassword) => !prevShowPassword);
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,8 +28,6 @@ const UserAuth = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
-  const passRequest = () => {};
 
   return (
     <Container component="main" maxWidth="sm">
@@ -73,4 +65,4 @@ const UserAuth = () => {
   );
 };
 
-export default UserAuth;
+export default KycAccess;
