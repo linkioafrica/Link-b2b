@@ -43,12 +43,20 @@ const Usdc = () => {
               type="text"
             />
           </Grid>
-          <Grid>
+          {/* <Grid>
             <Typography paragraph={true} variant="subtitle" mt={3}>
               {"If business or recipient doesn’t have, "}
               {"generate one and send. "}
             </Typography>
-          </Grid>
+          </Grid> */}
+          <p className="text-lg mt-6 font-medium">
+            <span className="text-black">
+              If business or recipient doesn’t have,{" "}
+            </span>
+            <a href="/" className="text-primary">
+              generate one.
+            </a>
+          </p>
           <Button
             type="submit"
             fullWidth

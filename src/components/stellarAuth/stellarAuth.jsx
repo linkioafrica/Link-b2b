@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 import { PinInput } from "react-input-pin-code";
 // import styled from "styled-components";
@@ -25,8 +26,8 @@ const StellarAuth = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-16 bg-white rounded-sm p-10 mx-auto max-w-xl">
-      <h1 className="text-5xl text-black font-semibold">Authorisation code</h1>
+    <div className="flex flex-col items-center justify-center space-y-14 bg-white rounded-sm p-10 mx-auto max-w-xl">
+      <h1 className="text-5xl text-black ">Authorisation code</h1>
       <div>
         <PinInput
           values={values}

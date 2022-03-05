@@ -1,14 +1,31 @@
 /* eslint-disable no-unused-vars */
 import "./App.css";
-]
-import { Balance, Header, UserAuth, Request, StellarAuth } from "./components";
 
+import {
+  Balance,
+  Header,
+  UserAuth,
+  KycAccess,
+  Usdc,
+  StellarAuth,
+} from "./components";
 
 const App = () => {
   return (
     <div className="container">
       <Header />
-     
+
+      <div className="app__body">
+        <Balance width={350} cur="NGN" amount={560372.2} />
+
+        <UserAuth />
+
+        <StellarAuth />
+
+        <KycAccess />
+
+        <Usdc />
+      </div>
     </div>
   );
 };
