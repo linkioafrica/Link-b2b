@@ -1,5 +1,5 @@
-const stellarAuth = () => {
+const StellarAuth = () => {
   return <div>stellarAuth</div>;
 };
 
-export default stellarAuth;
+export default StellarAuth;
