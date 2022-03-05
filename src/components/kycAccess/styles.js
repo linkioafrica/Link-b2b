@@ -3,10 +3,11 @@ import { makeStyles } from "@mui/styles";
 export default makeStyles(() => ({
   paper: {
     marginTop: "16px",
+    // border: "1px solid red",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "16px",
+    padding: " 40px 16px",
   },
   root: {
     "& .MuiTextField-root": {
@@ -18,10 +19,13 @@ export default makeStyles(() => ({
     backgroundColor: "#1565d8",
   },
   form: {
-    width: "100%", // Fix IE 11 issue.
-    marginTop: "24px",
+    // border: "1px solid green",
+    width: "80%", // Fix IE 11 issue.
+    marginTop: "30px",
   },
   submit: {
-    marginTop: "20px",
+    width: "50%",
+    marginTop: "30px",
+    marginLeft: "25%",
   },
 }));

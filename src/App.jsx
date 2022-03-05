@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Balance, Header, UserAuth } from "./components";
+import { Balance, Header, UserAuth, KycAccess } from "./components";
 
 const App = () => {
   return (
@@ -10,6 +10,8 @@ const App = () => {
         <Balance Cur="NGN" amount={692737.05} width={350} />
 
         <UserAuth />
+
+        <KycAccess />
       </div>
     </div>
   );
