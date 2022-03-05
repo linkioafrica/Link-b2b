@@ -15,7 +15,7 @@ const Balance = ({ Cur, image, amount, width }) => {
         },
       }}
     >
-      <Paper className="p-amount" elevation={3}>
+      <Paper className="p-amount" elevation={1}>
         <div className="balance">
           <div className="balance-currency">
             <h3>{Cur}</h3>
