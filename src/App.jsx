@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Balance, Header, UserAuth, Request } from "./components";
+import { Balance, Header, UserAuth } from "./components";
 
 const App = () => {
   return (
@@ -10,8 +10,6 @@ const App = () => {
         <Balance Cur="NGN" amount={692737.05} width={350} />
 
         <UserAuth />
-
-        <Request title={"Withdrawal not initiated"} responds="false" />
       </div>
     </div>
   );
