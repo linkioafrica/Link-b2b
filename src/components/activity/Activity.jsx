@@ -1,8 +1,8 @@
 import "./Activity.css";
 import { Send } from "./Send";
-import { Recieve } from "./Recieve";
+import { Receive } from "./Receive";
 
-export const Activity = () => {
+const Activity = () => {
   return (
     <div className="rounded-lg bg-white py-5 px-7 max-w-lg ">
       <h1 className="relative text-primary font-semibold text-lg pb-2 heading">
@@ -10,13 +10,14 @@ export const Activity = () => {
       </h1>
       <hr className="border border-gray-300 " />
       <div className=" pt-2 activities relative">
-        <Recieve />
+        <Receive />
         <Send />
-        <Recieve />
+        <Receive />
         <Send />
-        <Recieve />
-        <Recieve />
+        <Receive />
+        <Receive />
       </div>
     </div>
   );
 };
+export default Activity;

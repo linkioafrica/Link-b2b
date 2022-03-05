@@ -1,6 +1,6 @@
 import "./Navbar.css";
 
-import logo from "../../assets/flags/LINK-logo.png";
+import logo from "../../assets/icons/LINK-logo.png";
 import home from "../../assets/icons/home.svg";
 import profile from "../../assets/icons/profile.png";
 import help from "../../assets/icons/help.png";
