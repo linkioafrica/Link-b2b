@@ -1,18 +1,19 @@
 import "./App.css";
 
-import { Balance, Header, UserAuth, Request } from "./components";
+import { Balance, Header, UserAuth, Request, StellarAuth } from "./components";
 
 const App = () => {
   return (
     <div className="container">
       <Header />
-      <div className="app__body">
-        <Balance Cur="NGN" amount={692737.05} width={350} />
+      <StellarAuth />
+      {/* <div className="app__body"> */}
+      {/* <Balance Cur="NGN" amount={692737.05} width={350} /> */}
 
-        <UserAuth />
+      {/* <UserAuth /> */}
 
-        <Request title={"Withdrawal not initiated"} responds="false" />
-      </div>
+      {/* <Request title={"Withdrawal not initiated"} responds="false" /> */}
+      {/* </div> */}
     </div>
   );
 };
