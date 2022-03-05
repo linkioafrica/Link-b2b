@@ -6,6 +6,7 @@ import { Converter } from "./components/converter/Converter";
 import "./App.css";
 
 import { Box, Paper } from "@mui/material";
+import { Activity } from "./components/activity/Activity";
 
 const App = () => {
   return (
@@ -35,6 +36,8 @@ const App = () => {
           <Balance Cur="NGN" amount={692737.05} />
         </Paper>
       </Box>
+
+      <Activity />
     </div>
   );
 };
