@@ -1,7 +1,5 @@
 // import { BsDroplet } from "react-icons/bs";
-import { Button } from "./components/button/Button";
-import { Balance } from "./components/balance/Balance";
-import { Converter } from "./components/converter/Converter";
+import { Button, Balance, Converter } from "./components";
 
 import "./App.css";
 

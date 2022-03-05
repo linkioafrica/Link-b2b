@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./Converter.css";
 
-export const Converter = ({ width }) => {
+const Converter = ({ width }) => {
   const [converter, setConverter] = useState({
     sending: 468.4,
     receiving: 193852.16,
@@ -63,3 +63,4 @@ export const Converter = ({ width }) => {
     </div>
   );
 };
+export default Converter;

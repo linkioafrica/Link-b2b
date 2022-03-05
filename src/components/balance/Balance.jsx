@@ -1,7 +1,7 @@
 import "./Balance.css";
 import country from "../../assets/flags/NGN-round.svg";
 
-export const Balance = ({ Cur, image, amount }) => {
+const Balance = ({ Cur, image, amount }) => {
   return (
     <div className="balance">
       <div className="balance-currency">
@@ -15,3 +15,4 @@ export const Balance = ({ Cur, image, amount }) => {
     </div>
   );
 };
+export default Balance;
