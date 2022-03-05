@@ -7,14 +7,11 @@ import { Avatar, Button, Paper, Typography } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
 import useStyles from "./styles";
-import Input from "./Input";
+import Input from "../formInput/Input";
 
 const initialState = {
-  firstName: "",
-  lastName: "",
   email: "",
   password: "",
-  confirmPassword: "",
 };
 
 const UserAuth = () => {
@@ -22,7 +19,6 @@ const UserAuth = () => {
   const classes = useStyles();
   const [formData, setFormData] = useState(initialState);
   const [showPassword, setShowPassword] = useState(false);
-  const [isSignup, setIsSignup] = useState(false);
 
   const handleShowPassword = () => {
     setShowPassword((prevShowPassword) => !prevShowPassword);
@@ -39,17 +35,6 @@ const UserAuth = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const switchMode = (e) => {
-    e.preventDefault();
-    // Method One
-    // isSignup ? setIsSignup(false) : setIsSignup(true);
-
-    // Method Two
-    setIsSignup((prevIsSignup) => !prevIsSignup);
-
-    setShowPassword(false);
-  };
-
   const passRequest = () => {};
 
   return (
@@ -63,23 +48,6 @@ const UserAuth = () => {
         </Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
           <Grid container spacing={2}>
-            {isSignup && (
-              <>
-                <Input
-                  name="firstName"
-                  label="First Name"
-                  handleChange={handleChange}
-                  autoFocus
-                  half
-                />
-                <Input
-                  name="lastName"
-                  label="Last Name"
-                  handleChange={handleChange}
-                  half
-                />
-              </>
-            )}
             <Input
               name="email"
               label="Email Address"
@@ -93,14 +61,6 @@ const UserAuth = () => {
               type={showPassword ? "text" : "password"}
               handleShowPassword={handleShowPassword}
             />
-            {isSignup && (
-              <Input
-                name="confirmPassword"
-                label="Repeat Password"
-                handleChange={handleChange}
-                type="password"
-              />
-            )}
           </Grid>
           <Grid container justifyContent="flex-end">
             <Grid item>
