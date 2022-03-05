@@ -7,7 +7,7 @@ import { Avatar, Button, Paper, Typography } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
 import useStyles from "./styles";
-import Input from "./Input";
+import Input from "../formInput/Input";
 
 const initialState = {
   email: "",

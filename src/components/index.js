@@ -1,4 +1,5 @@
 export { default as Button } from "./button/Button";
+// export { default as Input } from "./formInput/Input";
 export { default as Header } from "./header/Header";
 export { default as Request } from "./request/Request";
 export { default as Balance } from "./balance/Balance";
