@@ -1,6 +1,6 @@
 import { BsArrowDownLeft } from "react-icons/bs";
 
-export const Recieve = () => {
+export const Receive = () => {
   return (
     <div className="flex items-center justify-between py-3 relative">
       <div className="rounded-full bg-blue-200 p-2">

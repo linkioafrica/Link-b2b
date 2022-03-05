@@ -1,0 +1,17 @@
+.header {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.logo {
+  height: 1.8rem;
+  width: 5rem;
+}
+
+.close {
+  height: 1.3rem;
+  /* width: 100px; */
+}
