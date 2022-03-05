@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+
 import "./App.css";
 
 import { Balance, Header, UserAuth } from "./components";
@@ -10,8 +10,8 @@ const App = () => {
       <div className="app__body">
         {/* <Balance Cur="NGN" amount={692737.05} width={350} /> */}
 
-        <UserAuth />
       </div>
+
     </div>
   );
 };
