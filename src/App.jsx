@@ -11,12 +11,13 @@ import {
   CreatePassword,
 } from "./components";
 
-import { Dashboard } from "./container";
+import { Dashboard, Deposit } from "./container";
 
 const App = () => {
   return (
     <div className="container">
-      <Dashboard />
+      {/* <Dashboard /> */}
+      <Deposit />
     </div>
   );
 };
