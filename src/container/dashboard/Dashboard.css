@@ -1,0 +1,54 @@
+.dashboard__container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.dashboard__nav {
+  border: 1px solid rgb(49, 0, 128);
+  position: relative;
+}
+
+.dashboard__page {
+  border: 1px solid rgb(128, 0, 0);
+  background-color: var(--wild-sand);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+
+.dashboard__profile {
+  border: 1px solid rgb(205, 218, 22);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard__header {
+  font-size: var(--font-size-l);
+  font-weight: 600;
+}
+
+.dashboard__account {
+  border: 1px solid rgb(189, 18, 146);
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+.dashboard__money {
+  border: 1px solid rgb(15, 175, 224);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  row-gap: 20px;
+}
+
+.dashboard__activity {
+  border: 1px solid rgb(182, 86, 8);
+  justify-content: center;
+  align-items: center;
+}

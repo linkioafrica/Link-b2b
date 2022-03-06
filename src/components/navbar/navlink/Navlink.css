@@ -16,7 +16,8 @@
 .navbar-links > img {
   height: 15px;
   width: 15px;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 .navbar-links > p {

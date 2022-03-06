@@ -13,9 +13,9 @@ const Converter = ({ width }) => {
   const [sendInput, setSendInput] = useState(468.4);
 
   return (
-    <div className={`bg-primary rounded-xl px-8 py-10 ${width}`}>
+    <div className={`bg-primary rounded-lg px-4 py-8 ${width} mx-auto`}>
       {/* Top */}
-      <div className="bg-white flex items-center justify-between p-2 rounded-xl">
+      <div className="bg-white flex items-center justify-between py-2 px-3 rounded-lg">
         <div className="text-slate-700">
           <p className="text-lg font-normal">You send</p>
           <input
@@ -49,7 +49,7 @@ const Converter = ({ width }) => {
       </div>
 
       {/* Bottom */}
-      <div className="bg-white flex items-center justify-between p-2 rounded-xl">
+      <div className="bg-white flex items-center justify-between py-2 px-3 rounded-lg">
         <div className="text-slate-700">
           <p className="text-lg font-normal">Recieve</p>
           <h1 className="text-xl font-medium">{converter.receiving}</h1>

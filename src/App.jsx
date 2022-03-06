@@ -11,24 +11,12 @@ import {
   CreatePassword,
 } from "./components";
 
+import { Dashboard } from "./container";
+
 const App = () => {
   return (
     <div className="container">
-      <Header />
-
-      <div className="app__body">
-        <Balance width={350} cur="NGN" amount={560372.2} />
-
-        <UserAuth />
-
-        <StellarAuth />
-
-        <KycAccess />
-
-        <Usdc />
-
-        <CreatePassword />
-      </div>
+      <Dashboard />
     </div>
   );
 };
