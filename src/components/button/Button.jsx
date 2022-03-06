@@ -1,7 +1,17 @@
-const Button = ({ icon, bgColor, ringColor, text, textSize, paddingX }) => {
+const Button = ({
+  icon,
+  bgColor,
+  ringColor,
+  text,
+  textSize,
+  paddingX,
+  paddingY,
+}) => {
   return (
     <button
-      className={`flex items-center justify-center text-white font-normal ${textSize} mb-4 rounded-lg ${bgColor} ${paddingX} py-1 active:ring ${ringColor} transition duration-200 ease-out cursor-pointer ${
+      className={`flex items-center justify-center text-white font-normal ${textSize} mb-4 rounded-lg ${bgColor} ${paddingX} ${
+        paddingY ? paddingY : "py-1"
+      } active:ring ${ringColor} transition duration-200 ease-out cursor-pointer ${
         icon && "space-x-2"
       }`}
     >
