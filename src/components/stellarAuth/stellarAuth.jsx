@@ -26,8 +26,8 @@ const StellarAuth = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-14 bg-white rounded-sm p-10 mx-auto max-w-xl">
-      <h1 className="text-5xl text-black ">Authorisation code</h1>
+    <div className="flex flex-col items-center justify-center space-y-14 bg-white rounded-md p-10 mx-auto max-w-xl shadow-md">
+      <h1 className="text-4xl text-black ">Authorisation code</h1>
       <div>
         <PinInput
           values={values}
@@ -39,11 +39,11 @@ const StellarAuth = () => {
       <button
         className={`${
           isDisabled ? "cursor-not-allowed bg-opacity-70" : "cursor-pointer"
-        } bg-secondary  text-white px-20 py-2 rounded-lg text-lg block`}
+        } bg-secondary text-white px-20 py-1 rounded-md text-md block`}
         onClick={validatePin}
         disabled={isDisabled}
       >
-        Submit
+        SUBMIT
       </button>
       <p className="text-lg font-medium">
         <span className="text-black">If you do not have one, </span>

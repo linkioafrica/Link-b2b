@@ -8,4 +8,5 @@ export { default as Converter } from "./converter/Converter";
 export { default as Usdc } from "./usdc/Usdc";
 export { default as KycAccess } from "./kycAccess/kycAccess";
 export { default as UserAuth } from "./userAuth/userAuth";
+export { default as CreatePassword } from "./createPassword/createPassword";
 export { default as StellarAuth } from "./stellarAuth/stellarAuth";

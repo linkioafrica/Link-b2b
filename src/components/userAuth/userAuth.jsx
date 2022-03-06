@@ -38,8 +38,8 @@ const UserAuth = () => {
   const passRequest = () => {};
 
   return (
-    <Container component="main" maxWidth="xs">
-      <Paper className={classes.paper} elevation={3}>
+    <Container component="main" maxWidth="sm">
+      <Paper className={classes.paper} elevation={2}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>

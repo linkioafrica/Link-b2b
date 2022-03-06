@@ -8,6 +8,7 @@ import {
   KycAccess,
   Usdc,
   StellarAuth,
+  CreatePassword,
 } from "./components";
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
         <KycAccess />
 
         <Usdc />
+
+        <CreatePassword />
       </div>
     </div>
   );

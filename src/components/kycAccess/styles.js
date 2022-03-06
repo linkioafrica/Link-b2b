@@ -3,7 +3,6 @@ import { makeStyles } from "@mui/styles";
 export default makeStyles(() => ({
   paper: {
     marginTop: "16px",
-    // border: "1px solid red",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -19,7 +18,6 @@ export default makeStyles(() => ({
     backgroundColor: "#1565d8",
   },
   form: {
-    // border: "1px solid green",
     width: "85%", // Fix IE 11 issue.
     marginTop: "30px",
   },

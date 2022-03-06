@@ -30,7 +30,7 @@ const Usdc = () => {
 
   return (
     <Container component="main" maxWidth="sm">
-      <Paper className={classes.paper} elevation={3}>
+      <Paper className={classes.paper} elevation={2}>
         <Typography component="h2" variant="h4">
           {"Send instantly"}
         </Typography>
