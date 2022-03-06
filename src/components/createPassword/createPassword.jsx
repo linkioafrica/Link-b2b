@@ -10,11 +10,11 @@ import useStyles from "./styles";
 import Input from "../formInput/Input";
 
 const initialState = {
-  email: "",
   password: "",
+  confirmPassword: "",
 };
 
-const UserAuth = () => {
+const CreatePassword = () => {
   // const navigate = useNavigate();
   const classes = useStyles();
   const [formData, setFormData] = useState(initialState);
@@ -35,37 +35,30 @@ const UserAuth = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const passRequest = () => {};
-
   return (
     <Container component="main" maxWidth="sm">
       <Paper className={classes.paper} elevation={2}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
-          {"Welcome back!"}
+        <Typography component="h2" variant="h4">
+          {"Set up your account"}
         </Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Input
-              name="email"
-              label="Email Address"
-              handleChange={handleChange}
-              type="email"
-            />
-            <Input
               name="password"
-              label="Password"
+              label="Create secure Password"
               handleChange={handleChange}
               type={showPassword ? "text" : "password"}
               handleShowPassword={handleShowPassword}
             />
-          </Grid>
-          <Grid container justifyContent="flex-end">
-            <Grid item>
-              <Button onClick={passRequest}>{"Forgot password?"}</Button>
-            </Grid>
+            <Input
+              name="confirmPassword"
+              label="Confirm Password"
+              handleChange={handleChange}
+              type="password"
+            />
           </Grid>
           <Button
             type="submit"
@@ -74,7 +67,7 @@ const UserAuth = () => {
             color="primary"
             className={classes.submit}
           >
-            {"Sign In"}
+            {"Create Password"}
           </Button>
           {/* <Grid container justify="flex-end">
             <Grid item>
@@ -91,4 +84,4 @@ const UserAuth = () => {
   );
 };
 
-export default UserAuth;
+export default CreatePassword;

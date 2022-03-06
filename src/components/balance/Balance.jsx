@@ -3,7 +3,7 @@ import country from "../../assets/flags/NGN-round.svg";
 
 import { Box, Paper } from "@mui/material";
 
-const Balance = ({ Cur, image, amount, width }) => {
+const Balance = ({ cur, image, amount, width }) => {
   return (
     <Box
       sx={{
@@ -18,7 +18,7 @@ const Balance = ({ Cur, image, amount, width }) => {
       <Paper className="p-amount" elevation={1}>
         <div className="balance">
           <div className="balance-currency">
-            <h3>{Cur}</h3>
+            <h3>{cur}</h3>
             <img src={country} alt="NGN" />
           </div>
           <div className="balance-amount">

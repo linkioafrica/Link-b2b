@@ -3,7 +3,6 @@ import { makeStyles } from "@mui/styles";
 export default makeStyles(() => ({
   paper: {
     marginTop: "16px",
-    marginBottom: "16px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
