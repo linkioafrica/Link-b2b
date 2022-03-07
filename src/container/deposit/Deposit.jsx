@@ -28,7 +28,7 @@ const Deposit = () => {
 
       <h1 className="text-black text-5xl font-semibold">Deposit</h1>
 
-      <form action="" className="space-y-8 mt-10">
+      <form action="" className="space-y-8 mt-14">
         <div className="space-y-4">
           <p className="text-gray-500 text-lg">Amount in Naira</p>
           <input
