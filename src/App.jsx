@@ -12,7 +12,7 @@ import {
   Button,
 } from "./components";
 
-import { Dashboard } from "./container";
+import { Dashboard, Profile } from "./container";
 
 const App = () => {
   return (
