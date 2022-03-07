@@ -1,15 +1,17 @@
 .dashboard__container {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 15% 85%;
+  position: relative;
+  overflow-x: scroll;
 }
 
 .dashboard__nav {
-  border: 1px solid rgb(49, 0, 128);
+  /* border: 1px solid rgb(49, 0, 128); */
   position: relative;
 }
 
 .dashboard__page {
-  border: 1px solid rgb(128, 0, 0);
+  /* border: 1px solid rgb(128, 0, 0); */
   background-color: var(--wild-sand);
   display: flex;
   flex-direction: column;
@@ -22,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 10px auto 30px auto;
 }
 
 .dashboard__header {

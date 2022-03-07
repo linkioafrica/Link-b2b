@@ -35,12 +35,16 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Redirect to="/authorize-withdraw" />} />
 
-            <Route path="/authorize-withdraw" element={<StellarAuth />} />
+            <Route
+              path="/authorize-withdraw"
+              element={<StellarAuth link={"/auth"} />}
+            />
 
             <Route
               path="/authorize-deposit"
-              element={<StellarAuth link={"/auth"} />}
+              element={<StellarAuth link={"/deposit"} />}
             />
+
             <Route path="/user-account" element={<Dashboard />} />
 
             <Route path="/auth" element={<UserAuth />} />

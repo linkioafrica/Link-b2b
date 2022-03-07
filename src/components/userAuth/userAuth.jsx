@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import { Avatar, Button, Paper, Typography } from "@mui/material";
@@ -15,7 +15,7 @@ const initialState = {
 };
 
 const UserAuth = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const classes = useStyles();
   const [formData, setFormData] = useState(initialState);
   const [showPassword, setShowPassword] = useState(false);
@@ -26,6 +26,8 @@ const UserAuth = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    navigate("/withdrawal");
 
     // dispatch(signin(formData, navigate));
   };

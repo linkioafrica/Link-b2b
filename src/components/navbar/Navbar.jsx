@@ -11,7 +11,16 @@ import Navlink from "./navlink/Navlink";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <img src={logo} alt="LINK Logo" />
+      <a href="/">
+        <img
+          style={{
+            height: "2rem",
+            margin: "0px auto 50px auto",
+          }}
+          src={logo}
+          alt="LINK Logo"
+        />
+      </a>
       <Navlink image={home} text={"Dashboard"} />
       <div className="navbar-bottom">
         <Navlink image={profile} text={"Profile "} />

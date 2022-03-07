@@ -5,7 +5,7 @@ import { PinInput } from "react-input-pin-code";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 // import styled from "styled-components";
 
-const StellarAuth = () => {
+const StellarAuth = ({ link }) => {
   const [values, setValues] = useState(["", "", "", ""]);
   const [pin, setPin] = useState("");
   const [isDisabled, setIsDisabled] = useState(true);
@@ -27,7 +27,7 @@ const StellarAuth = () => {
   };
 
   const validatePin = () => {
-    navigate("/auth");
+    navigate(link);
   };
 
   return (

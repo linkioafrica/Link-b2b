@@ -1,11 +1,12 @@
 .navbar-links {
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 5px;
   margin: 0 auto;
-  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .navbar-links > p::focus,
@@ -14,15 +15,17 @@
 }
 
 .navbar-links > img {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   margin-right: 20px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .navbar-links > p {
   color: var(--nevada);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 400;
+  cursor: pointer;
 }
