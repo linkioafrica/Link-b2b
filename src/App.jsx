@@ -16,8 +16,7 @@ import { Dashboard, Deposit } from "./container";
 const App = () => {
   return (
     <div className="container">
-      {/* <Dashboard /> */}
-      <Deposit />
+      <Dashboard />
     </div>
   );
 };
