@@ -9,9 +9,12 @@ import {
   Usdc,
   StellarAuth,
   CreatePassword,
+  Button,
 } from "./components";
 
-import { Dashboard, Deposit } from "./container";
+
+import { Dashboard, Profile } from "./container";
+
 
 const App = () => {
   return (
