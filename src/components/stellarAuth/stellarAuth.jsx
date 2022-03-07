@@ -1,12 +1,17 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 import { PinInput } from "react-input-pin-code";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 // import styled from "styled-components";
 
 const StellarAuth = () => {
   const [values, setValues] = useState(["", "", "", ""]);
   const [pin, setPin] = useState("");
   const [isDisabled, setIsDisabled] = useState(true);
+
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     setPin(verifyPin());
@@ -22,7 +27,7 @@ const StellarAuth = () => {
   };
 
   const validatePin = () => {
-    // console.log(pin);
+    navigate("/auth");
   };
 
   return (

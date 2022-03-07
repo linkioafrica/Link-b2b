@@ -68,10 +68,11 @@ const UserAuth = () => {
             </Grid>
           </Grid>
           <Button
+            style={{
+              backgroundColor: "#30AE4D",
+            }}
             type="submit"
-            fullWidth
             variant="contained"
-            color="primary"
             className={classes.submit}
           >
             {"Sign In"}

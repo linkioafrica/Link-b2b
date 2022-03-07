@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { BsArrowLeft, BsInfoCircle } from "react-icons/bs";
 import { ImSpinner9 } from "react-icons/im";
