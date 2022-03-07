@@ -17,7 +17,7 @@ const Withdrawal = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto my-28">
+    <div className="max-w-3xl mx-auto my-2">
       <a
         href="/"
         className="flex items-center space-x-3 text-primary text-xl font-medium mb-5"
