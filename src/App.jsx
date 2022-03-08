@@ -37,9 +37,9 @@ const App = () => {
     <div className="container">
       <Router>
         {/* If the url path is http://localhost:3000/user-account the nav header will not show on app.js */}
-        {urlPath === "http://localhost:3000/user-account" ? null : <Header />}
+        {urlPath === "http://localhost:3001/user-account" ? null : <Header />}
 
-        <Header />
+        {/* <Header /> */}
         <div className="app__body">
           <Routes>
             <Route path="/" element={<Redirect to="/authorize-withdraw" />} />

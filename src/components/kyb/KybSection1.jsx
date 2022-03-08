@@ -4,7 +4,7 @@ import { BsArrowLeft, BsX } from "react-icons/bs";
 import { Button } from "..";
 
 const KybSection1 = () => {
-  const [section1Date, setsection1Data] = useState({
+  const [section1Date, setSection1Data] = useState({
     country: "",
     industry: "",
     category: "",
@@ -18,13 +18,13 @@ const KybSection1 = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setsection1Data((prev) => {
+    setSection1Data((prev) => {
       return { ...prev, [name]: value };
     });
   };
 
   return (
-    <div className="max-w-3xl mx-auto my-28">
+    <div className="max-w-3xl mx-auto my-10">
       <div className="flex items-center justify-between">
         <a
           href="/"
@@ -36,7 +36,8 @@ const KybSection1 = () => {
           href="/"
           className="flex items-center space-x-3 text-primary text-xl font-medium mb-5"
         >
-          <span>Cancel</span> <BsX className="text-3xl" />
+          <span>Cancel</span>
+          {/* <BsX className="text-3xl" /> */}
         </a>
       </div>
 

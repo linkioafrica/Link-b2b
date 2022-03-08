@@ -4,20 +4,20 @@ import { BsArrowLeft, BsX, BsCloudUpload } from "react-icons/bs";
 import { Button } from "..";
 
 const KybSection3 = () => {
-  const [section3Date, setsection3Data] = useState({
+  const [section3Date, setSection3Data] = useState({
     RCNumber: "",
     taxID: "",
   });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setsection3Data((prev) => {
+    setSection3Data((prev) => {
       return { ...prev, [name]: value };
     });
   };
 
   return (
-    <div className="max-w-3xl mx-auto my-28">
+    <div className="max-w-3xl mx-auto my-10">
       <div className="flex items-center justify-between">
         <a
           href="/"
@@ -29,7 +29,8 @@ const KybSection3 = () => {
           href="/"
           className="flex items-center space-x-3 text-primary text-xl font-medium mb-5"
         >
-          <span>Cancel</span> <BsX className="text-3xl" />
+          <span>Cancel</span>
+          {/* <BsX className="text-3xl" /> */}
         </a>
       </div>
 
