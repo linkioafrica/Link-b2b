@@ -10,3 +10,7 @@ export { default as KycAccess } from "./kycAccess/kycAccess";
 export { default as UserAuth } from "./userAuth/userAuth";
 export { default as CreatePassword } from "./createPassword/createPassword";
 export { default as StellarAuth } from "./stellarAuth/stellarAuth";
+export { default as KybSection1 } from "./kyb/KybSection1";
+export { default as KybSection2 } from "./kyb/KybSection2";
+export { default as KybSection3 } from "./kyb/KybSection3";
+export { default as KybSection4 } from "./kyb/KybSection4";

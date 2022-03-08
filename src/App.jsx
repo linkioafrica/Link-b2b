@@ -9,7 +9,16 @@ import {
   useNavigate,
 } from "react-router-dom";
 
-import { Header, StellarAuth, UserAuth, Usdc } from "./components";
+import {
+  Header,
+  StellarAuth,
+  UserAuth,
+  Usdc,
+  KybSection1,
+  KybSection2,
+  KybSection3,
+  KybSection4,
+} from "./components";
 
 import { Dashboard, Withdrawal, Deposit } from "./container";
 
@@ -28,7 +37,7 @@ const App = () => {
     <div className="container">
       <Router>
         {/* If the url path is http://localhost:3000/user-account the nav header will not show on app.js */}
-        {urlPath === "http://localhost:3000/user-account" ? null : <Header />}
+        {urlPath === "http://localhost:3001/user-account" ? null : <Header />}
 
         {/* <Header /> */}
         <div className="app__body">
