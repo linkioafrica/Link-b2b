@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import "./App.css";
-import Container from "@mui/material/Container";
+
 import { useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -18,6 +18,7 @@ import {
   KybSection2,
   KybSection3,
   KybSection4,
+  BankWithdrawal,
 } from "./components";
 
 import { Dashboard, Withdrawal, Deposit } from "./container";
@@ -35,12 +36,13 @@ const App = () => {
 
   return (
     <div className="container">
-      <Router>
-        {/* If the url path is http://localhost:3000/user-account the nav header will not show on app.js */}
-        {urlPath === "http://localhost:3001/user-account" ? null : <Header />}
+      <BankWithdrawal />
+      {/* <Router> */}
+      {/* If the url path is http://localhost:3000/user-account the nav header will not show on app.js */}
+      {/* {urlPath === "http://localhost:3001/user-account" ? null : <Header />} */}
 
-        {/* <Header /> */}
-        <div className="app__body">
+      {/* <Header /> */}
+      {/* <div className="app__body">
           <Routes>
             <Route path="/" element={<Redirect to="/authorize-withdraw" />} />
 
@@ -62,8 +64,8 @@ const App = () => {
 
             <Route path="/deposit" element={<Deposit />} />
           </Routes>
-        </div>
-      </Router>
+        </div> */}
+      {/* </Router> */}
     </div>
   );
 };

@@ -14,3 +14,4 @@ export { default as KybSection1 } from "./kyb/KybSection1";
 export { default as KybSection2 } from "./kyb/KybSection2";
 export { default as KybSection3 } from "./kyb/KybSection3";
 export { default as KybSection4 } from "./kyb/KybSection4";
+export { default as BankWithdrawal } from "./bankWithdrawal/BankWithdrawal";
