@@ -21,7 +21,7 @@ import {
   BankWithdrawal,
 } from "./components";
 
-import { Dashboard, Withdrawal, Deposit } from "./container";
+import { Dashboard, Withdrawal, Deposit, NgnAccount } from "./container";
 
 const App = () => {
   function Redirect({ to }) {
@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <BankWithdrawal />
+      <NgnAccount />
       {/* <Router> */}
       {/* If the url path is http://localhost:3000/user-account the nav header will not show on app.js */}
       {/* {urlPath === "http://localhost:3001/user-account" ? null : <Header />} */}

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
-import { BsArrowLeft, BsX } from "react-icons/bs";
+import { BsArrowLeft } from "react-icons/bs";
 import { Button } from "..";
 
 const KybSection1 = () => {
