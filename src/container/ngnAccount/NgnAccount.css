@@ -1,0 +1,10 @@
+.row {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 0.125rem;
+  background-color: #fff;
+  max-width: 48rem;
+  border-radius: 0.2rem;
+}
