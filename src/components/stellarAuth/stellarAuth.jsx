@@ -31,7 +31,7 @@ const StellarAuth = ({ link }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-14 bg-white rounded-md p-10 mx-auto max-w-xl shadow-md">
+    <div className="flex flex-col items-center justify-center space-y-14 bg-white rounded-md p-10 max-w-xl shadow-sm w-[80%] mx-auto">
       <h1 className="text-4xl text-black ">Authorisation code</h1>
       <div>
         <PinInput
@@ -50,7 +50,7 @@ const StellarAuth = ({ link }) => {
       >
         SUBMIT
       </button>
-      <p className="text-lg font-medium">
+      <p className="text-base md:text-lg font-medium text-center">
         <span className="text-black">If you do not have one, </span>
         <a href="/" className="text-primary">
           contact your platform owner

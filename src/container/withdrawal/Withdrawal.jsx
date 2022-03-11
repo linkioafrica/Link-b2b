@@ -18,7 +18,7 @@ const Withdrawal = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto my-2">
+    <div className="w-[80%] mx-auto my-2">
       <Link to="/auth">
         <a
           href="/"
@@ -44,12 +44,13 @@ const Withdrawal = () => {
             placeholder="Enter Stellar address or Federation address"
           />
         </div>
-        <div className="bg-white text-lg text-black font-medium p-3 rounded-md inline-flex items-center">
+        <div className="bg-white text-lg text-black font-medium p-3 rounded-md inline-flex items-center w-full md:max-w-lg">
           <input
             type="number"
             name="fee"
             id=""
-            className="flex-grow font-medium placeholder-black outline-none"
+            disabled="disabled"
+            className="flex-grow bg-transparent font-medium placeholder-black outline-none"
             placeholder="0.00 NGN"
             onChange={handleChange}
           />
@@ -65,7 +66,7 @@ const Withdrawal = () => {
             </p>
           </div>
           <div className="flex items-center space-x-4">
-            <BsInfoCircle className="text-primary text-2xl font-medium" />
+            <BsInfoCircle className="text-primary text-lg md:text-2xl font-medium" />
             <p className="text-black text-lg font-medium">
               Ensure you have at least 4 XLM in your account.
             </p>
