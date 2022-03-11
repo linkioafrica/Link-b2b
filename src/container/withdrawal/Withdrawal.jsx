@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { BsArrowLeft, BsInfoCircle } from "react-icons/bs";
-import { Button } from "../../components";
+import { Button, Request } from "../../components";
+import { Link } from "react-router-dom";
 
 const Withdrawal = () => {
   const [withdrawalData, setWithdrawalData] = useState({
@@ -18,12 +19,14 @@ const Withdrawal = () => {
 
   return (
     <div className="max-w-3xl mx-auto my-2">
-      <a
-        href="/"
-        className="flex items-center space-x-3 text-primary text-xl font-medium mb-5"
-      >
-        <BsArrowLeft className="text-2xl" /> <span>Go back</span>
-      </a>
+      <Link to="/auth">
+        <a
+          href="/"
+          className="flex items-center space-x-3 text-primary text-xl font-medium mb-5"
+        >
+          <BsArrowLeft className="text-2xl" /> <span>Go back</span>
+        </a>
+      </Link>
 
       <h1 className="text-black text-5xl font-semibold">Withdraw NGNC</h1>
 
@@ -71,6 +74,7 @@ const Withdrawal = () => {
 
         <div className="flex items-center justify-center pt-3">
           <Button
+            link={"/request"}
             bgColor="bg-secondary"
             ringColor="ring-green-400"
             text="Request withdrawal"

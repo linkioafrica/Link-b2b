@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "../dashboard/Dashboard.css";
 import "./NgnAccount.css";
 import { BsArrowLeft } from "react-icons/bs";

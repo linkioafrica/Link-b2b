@@ -11,6 +11,7 @@ import {
 
 import {
   Header,
+  Request,
   StellarAuth,
   UserAuth,
   Usdc,
@@ -37,37 +38,44 @@ const App = () => {
 
   return (
     <div className="container">
-      <NgnAccount />
-
-      {/* <Router> */}
-      {/* If the url path is http://localhost:3000/user-account the nav header will not show on app.js */}
-      {/* {urlPath === "http://localhost:3001/user-account" ? null : <Header />} */}
-
-      {/* <Header /> */}
-      {/* <div className="app__body">
+      <Router>
+        {/* If the url path is http://localhost:?/user-account the nav header will not show on app.js */}
+        {urlPath === "http://localhost:3000/user-account" ? null : <Header />}
+        <div className="app__body">
           <Routes>
             <Route path="/" element={<Redirect to="/authorize-withdraw" />} />
-
+            {/* Link to withdraw Authorisation */}
             <Route
               path="/authorize-withdraw"
               element={<StellarAuth link={"/auth"} />}
             />
-
+            {/* Link to deposit Authorisation */}
             <Route
               path="/authorize-deposit"
               element={<StellarAuth link={"/deposit"} />}
             />
-
+            {/* Link to User Dashboard */}
             <Route path="/user-account" element={<Dashboard />} />
-
+            {/* Link to User Login */}
             <Route path="/auth" element={<UserAuth />} />
-
+            {/* Link to withdraw Input Page */}
             <Route path="/withdrawal" element={<Withdrawal />} />
-
+            {/* Link to Deposit Input Page */}``
             <Route path="/deposit" element={<Deposit />} />
+            {/* Link to Request page */}
+            <Route
+              path="/request"
+              element={
+                <Request
+                  title="Withdrawal request received"
+                  responds={true}
+                  href={"/"}
+                />
+              }
+            />
           </Routes>
-        </div> */}
-      {/* </Router> */}
+        </div>
+      </Router>
     </div>
   );
 };

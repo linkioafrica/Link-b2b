@@ -78,6 +78,7 @@ const Deposit = () => {
 
         <div className="flex items-center justify-center pt-3">
           <Button
+            link={"/request"}
             bgColor="bg-secondary"
             ringColor="ring-green-400"
             text="Request deposit"
