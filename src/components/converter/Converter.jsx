@@ -15,9 +15,9 @@ const Converter = ({ width }) => {
   return (
     <div className={`bg-primary rounded-lg px-4 py-8 ${width} mx-auto`}>
       {/* Top */}
-      <div className="bg-white flex items-center justify-between py-2 px-3 rounded-lg">
+      <div className="bg-white flex items-center justify-between py-1 px-3 rounded-lg">
         <div className="text-slate-700">
-          <p className="text-lg font-normal">You send</p>
+          <p className="text-lg">You send</p>
           <input
             type="number"
             name=""
@@ -27,7 +27,7 @@ const Converter = ({ width }) => {
             onChange={(event) => setSendInput(event.target.value)}
           />
         </div>
-        <div className="py-3 pl-10 pr-20 border-l border-gray-800">
+        <div className="py-3 pl-4  border-l border-gray-800">
           <select name="" id="" className="outline-none">
             <option value="">USD</option>
           </select>
@@ -49,12 +49,12 @@ const Converter = ({ width }) => {
       </div>
 
       {/* Bottom */}
-      <div className="bg-white flex items-center justify-between py-2 px-3 rounded-lg">
+      <div className="bg-white flex items-center justify-between py-1 px-3 rounded-lg">
         <div className="text-slate-700">
-          <p className="text-lg font-normal">Recieve</p>
+          <p className="text-lg ">Recieve</p>
           <h1 className="text-xl font-medium">{converter.receiving}</h1>
         </div>
-        <div className="py-3 pl-10 pr-20 border-l border-gray-800">
+        <div className="py-3 pl-4  border-l border-gray-800">
           <select name="" id="" className="outline-none">
             <option value="">NGN</option>
           </select>

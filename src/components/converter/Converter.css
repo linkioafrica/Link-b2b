@@ -7,7 +7,7 @@ h2::before {
   background-color: rgb(199, 199, 199);
   position: absolute;
   left: -8px;
-  margin: 8px auto;
+  margin: 5px auto;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
