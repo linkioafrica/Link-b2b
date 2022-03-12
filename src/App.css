@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: var(--font-family-circular_std-regular);
 }
 
 .container {
@@ -11,11 +12,12 @@
   background-color: var(--wild-sand);
   /* padding: 30px 70px; */
   overflow-x: hidden;
+  /* overflow-y: scroll; */
   position: relative;
 }
 
 .app__body {
-  /* border: 1px solid rgb(0, 13, 128); */
+  border: 1px solid rgb(0, 13, 128);
   width: 100%;
   /* height: 80%; */
   /* padding-left: 20%; */

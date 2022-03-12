@@ -29,5 +29,6 @@ export default makeStyles(() => ({
   },
   submit: {
     width: "50%",
+    // textTransform: "none",
   },
 }));

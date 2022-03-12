@@ -2,9 +2,9 @@ import { useState } from "react";
 import { BsArrowLeft } from "react-icons/bs";
 import { Button } from "../../components";
 
-const Profile = ({ bussinessName, LINKTag, email }) => {
+const Profile = ({ businessName, LINKTag, email }) => {
   const [profileData, setProfileData] = useState({
-    bussinessName: bussinessName,
+    businessName: businessName,
     email: email,
     LINKTag: LINKTag,
   });
@@ -17,7 +17,7 @@ const Profile = ({ bussinessName, LINKTag, email }) => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto my-28">
+    <div className="max-w-3xl mx-auto my-2">
       <a
         href="/"
         className="flex items-center space-x-3 text-primary text-xl font-medium mb-5"
@@ -33,11 +33,11 @@ const Profile = ({ bussinessName, LINKTag, email }) => {
           <p className="text-gray-500 text-lg">Business name</p>
           <input
             type="text"
-            name="bussinessName"
+            name="businessName"
             id=""
             onChange={handleChange}
             className="w-full bg-white text-lg text-black p-3 rounded-md placeholder-black font-semibold outline-none"
-            value={profileData.bussinessName}
+            value={profileData.businessName}
           />
         </div>
 

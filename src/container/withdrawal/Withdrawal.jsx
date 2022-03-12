@@ -18,7 +18,7 @@ const Withdrawal = () => {
   };
 
   return (
-    <div className="w-[80%] mx-auto my-2">
+    <div className="max-w-3xl mx-auto my-2">
       <Link to="/auth">
         <a
           href="/"

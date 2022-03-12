@@ -3,8 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import { Avatar, Button, Paper, Typography } from "@mui/material";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import { Button, Paper, Typography } from "@mui/material";
 
 import useStyles from "./styles";
 import Input from "../formInput/Input";
@@ -42,9 +41,6 @@ const UserAuth = () => {
   return (
     <Container component="main" maxWidth="sm">
       <Paper className={classes.paper} elevation={2}>
-        <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar>
         <Typography component="h1" variant="h5">
           {"Welcome back!"}
         </Typography>
@@ -66,12 +62,20 @@ const UserAuth = () => {
           </Grid>
           <Grid container justifyContent="flex-end">
             <Grid item>
-              <Button onClick={passRequest}>{"Forgot password?"}</Button>
+              <Button
+                style={{
+                  textTransform: "none",
+                }}
+                onClick={passRequest}
+              >
+                {"Forgot password?"}
+              </Button>
             </Grid>
           </Grid>
           <Button
             style={{
               backgroundColor: "#30AE4D",
+              textTransform: "none",
             }}
             type="submit"
             variant="contained"

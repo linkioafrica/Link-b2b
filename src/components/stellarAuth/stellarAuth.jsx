@@ -31,10 +31,17 @@ const StellarAuth = ({ link }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-14 bg-white rounded-md p-10 max-w-xl shadow-sm w-[80%] mx-auto">
-      <h1 className="text-4xl text-black ">Authorisation code</h1>
+    <div className="flex flex-col items-center justify-center space-y-12 bg-white rounded-md p-10 max-w-xl shadow-sm w-[80%] mx-auto">
+      <h1 className="text-3xl text-black ">Authorisation code</h1>
       <div>
         <PinInput
+          inputStyle={{
+            borderRadius: "5px",
+            border: "1px solid",
+            margin: "0px 15px",
+            width: "50px",
+            height: "50px",
+          }}
           values={values}
           placeholder=""
           onComplete={verifyPin}
@@ -48,7 +55,7 @@ const StellarAuth = ({ link }) => {
         onClick={validatePin}
         disabled={isDisabled}
       >
-        SUBMIT
+        Submit
       </button>
       <p className="text-base md:text-lg font-medium text-center">
         <span className="text-black">If you do not have one, </span>

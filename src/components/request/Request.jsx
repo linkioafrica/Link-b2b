@@ -25,14 +25,14 @@ const Request = ({ title, info, href, responds }) => {
 
       {responds ? (
         <button
-          className="bg-secondary capitalize text-white block px-10 py-2 rounded-lg "
+          className="bg-secondary capitalize text-white block px-10 py-2 px-5 rounded-lg "
           onClick={validateRequest}
         >
           Done
         </button>
       ) : (
         <button
-          className="bg-rose-500 capitalize text-white block px-10 py-2 rounded-lg "
+          className="bg-rose-500 capitalize text-white block px-10 py-2 rounded-lg px-5"
           onClick={() => href}
         >
           Retry

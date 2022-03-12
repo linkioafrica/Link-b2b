@@ -12,7 +12,6 @@ const Button = ({
   textSize,
   paddingX,
   paddingY,
-  handleClick,
   spinner,
 }) => {
   const navigate = useNavigate();
