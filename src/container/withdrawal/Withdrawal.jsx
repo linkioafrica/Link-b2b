@@ -94,7 +94,7 @@ const Withdrawal = () => {
             ringColor="ring-green-400"
             text="Request withdrawal"
             textSize="text-lg"
-            paddingX="px-10"
+            paddingX="px-16"
             paddingY="py-2"
             spinner={true}
           />
