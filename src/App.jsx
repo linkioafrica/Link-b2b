@@ -21,6 +21,7 @@ import {
   KybSection4,
   BankWithdrawal,
   NgncWallet,
+  NgncPopup,
 } from "./components";
 
 import { Dashboard, Withdrawal, Deposit, NgnAccount } from "./container";

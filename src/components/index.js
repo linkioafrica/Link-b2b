@@ -16,3 +16,4 @@ export { default as KybSection3 } from "./kyb/KybSection3";
 export { default as KybSection4 } from "./kyb/KybSection4";
 export { default as BankWithdrawal } from "./bankWithdrawal/BankWithdrawal";
 export { default as NgncWallet } from "./ngncWallet/NgncWallet";
+export { default as NgncPopup } from "./ngncPopup/NgncPopup";
