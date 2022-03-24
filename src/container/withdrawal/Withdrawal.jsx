@@ -3,10 +3,12 @@ import { useState } from "react";
 import { BsArrowLeft, BsInfoCircle } from "react-icons/bs";
 import { Button, Request } from "../../components";
 import { Link } from "react-router-dom";
+import NGN from "../../assets/flags/NGN-rectangle.svg";
 
 const Withdrawal = () => {
   const [withdrawalData, setWithdrawalData] = useState({
     address: "",
+    amount: 0,
     fee: 0,
   });
 
@@ -32,17 +34,29 @@ const Withdrawal = () => {
 
       <form action="" className="space-y-8 mt-14">
         <div className="space-y-4">
-          <p className="text-gray-500 text-lg">
-            Stellar address or Federation address
-          </p>
+          <p className="text-gray-500 text-lg">LINK Tag</p>
           <input
             type="text"
             name="address"
             id=""
             onChange={handleChange}
             className="w-full bg-white text-lg text-gray-500 p-3 rounded-md placeholder-gray-400 outline-none"
-            placeholder="Enter Stellar address or Federation address"
+            placeholder="Enter LINK Tag"
           />
+        </div>
+        <div className="space-y-4">
+          <p className="text-gray-500 text-lg">Amount to Withdraw</p>
+          <div className="w-full bg-white p-3  rounded-md flex space-x-5">
+            <img className="w-9" src={NGN} alt="LINK Logo" />
+            <input
+              type="number"
+              name="amount"
+              id=""
+              onChange={handleChange}
+              className=" text-lg text-gray-500 placeholder-gray-400 outline-none"
+              placeholder="500,000.00"
+            />
+          </div>
         </div>
         <div className="bg-white text-lg text-black font-medium p-3 rounded-md inline-flex items-center w-full md:max-w-lg">
           <input
