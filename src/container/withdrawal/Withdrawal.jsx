@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { BsArrowLeft, BsInfoCircle } from "react-icons/bs";
-import { Button, Request } from "../../components";
+import { Button } from "../../components";
 import { Link } from "react-router-dom";
 import NGN from "../../assets/flags/NGN-rectangle.svg";
 
